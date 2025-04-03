@@ -1037,7 +1037,7 @@ function SearchStudent() {
                                 className: "flex space-x-2",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "flex-1 bg-blue-500 text-white px-4 py-2 rounded    hover:bg-blue-600 transition-colors    disabled:bg-gray-400 disabled:cursor-not-allowed",
+                                        className: "flex-1 bg-blue-500 text-white px-4 py-2 rounded  hover:bg-blue-600 transition-colors  disabled:bg-gray-400 disabled:cursor-not-allowed",
                                         onClick: handleGenerateFeedback,
                                         disabled: !studentId || !feedbackType || generateFeedback.isLoading,
                                         children: generateFeedback.isLoading ? 'Generating...' : 'Generate Feedback'
@@ -1047,7 +1047,7 @@ function SearchStudent() {
                                         columnNumber: 11
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                        className: "flex-1 bg-green-500 text-white px-4 py-2 rounded    hover:bg-green-600 transition-colors    disabled:bg-gray-400 disabled:cursor-not-allowed",
+                                        className: "flex-1 bg-green-500 text-white px-4 py-2 rounded  hover:bg-green-600 transition-colors  disabled:bg-gray-400 disabled:cursor-not-allowed",
                                         disabled: !studentId,
                                         onClick: ()=>{
                                             const student = students?.find((s)=>s.id === studentId);
@@ -1223,7 +1223,7 @@ function SearchStudent() {
         columnNumber: 5
     }, this);
 }
-_s(SearchStudent, "UwAKtc8d/mJnZpBCechDdL+BGPM=");
+_s(SearchStudent, "UbXzvUMjpbycM7dzg5k4fkIMjLk=");
 _c = SearchStudent;
 var _c;
 __turbopack_context__.k.register(_c, "SearchStudent");
