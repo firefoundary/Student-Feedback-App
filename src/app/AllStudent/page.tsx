@@ -40,7 +40,7 @@ export default function AllStudentsPage() {
           ))}
         </ul>
       ) : (
-        <p>HOLD UP WAIT AMIN</p>
+        <p>Loading ...</p>
       )}
     </div>
     </div>
