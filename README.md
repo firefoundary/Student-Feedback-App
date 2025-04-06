@@ -71,6 +71,7 @@ An AI-integrated web application designed to help teachers manage student data e
   📱 Dedicated mobile app for real-time updates
 
 🤝 Contribution
-  👩‍💻 Team Name: amogus  
+  👩‍💻 Team Name: Team amogus 
+  
   👨‍💻 Teammates' Names – Aastha Shrivastava, Shubham Sengar, Advay Singh, Kushagra Bahrgava
 
