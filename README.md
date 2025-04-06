@@ -1,7 +1,9 @@
 🧠 Student Management App with AI-Powered Insights
+
 An AI-integrated web application designed to help teachers manage student data efficiently and generate personalized feedback using academic performance, attendance, and behavioral insights.
 
 🚀 Features
+
   📊 Input subject-wise grades, attendance, and behavioral notes
 
   🤖 AI-generated personalized feedback for each student
@@ -15,6 +17,7 @@ An AI-integrated web application designed to help teachers manage student data e
   📈 Performance tracking for academic and behavioral trends
 
 🎯 Problem Statement
+
   Teachers spend a lot of time crafting individual feedback for students, often with limited insights across academic and behavioral aspects. This results in:
 
   Time-consuming and repetitive tasks
@@ -24,20 +27,23 @@ An AI-integrated web application designed to help teachers manage student data e
   Lack of personalized insights for student growth
 
 💡 Our Solution
+
   Our app uses AI to analyze subject-wise marks, attendance records, and behavioral notes to generate meaningful, constructive feedback tailored to each student. It supports teachers by reducing manual effort and enhancing the quality of student evaluations.
 
 🔍 Unique Selling Points (USP)
-  ✅ Combines academic, behavioral, and attendance data for holistic insights
 
-  🧠 Uses LLM (e.g., Gemini API) for context-aware feedback generation
+    ✅ Combines academic, behavioral, and attendance data for holistic insights
 
-  ⏱ Saves time for teachers while maintaining personalization
+    🧠 Uses LLM (e.g., Gemini API) for context-aware feedback generation
 
-  🧾 Export-ready reports for parents and students
+    ⏱ Saves time for teachers while maintaining personalization
 
-  🧩 Easy to integrate with existing school systems
+    🧾 Export-ready reports for parents and students
+
+    🧩 Easy to integrate with existing school systems
 
 🧰 Tech Stack
+
   Frontend: React.js / Tailwind CSS / Next.js
 
   Backend: Node.js / tRPC / Prisma / NextAuth.js
@@ -53,6 +59,7 @@ An AI-integrated web application designed to help teachers manage student data e
   Storage: Firebase / AWS S3
 
 📦 How It Works
+
   Teachers input or upload student data
 
   AI analyzes the data using NLP and feedback models
@@ -62,6 +69,7 @@ An AI-integrated web application designed to help teachers manage student data e
   Teachers review, edit, and export the final reports
 
 🔮 Future Scope
+
   📚 LMS integration (Google Classroom, Moodle)
 
   🌍 Multilingual feedback support
@@ -71,6 +79,7 @@ An AI-integrated web application designed to help teachers manage student data e
   📱 Dedicated mobile app for real-time updates
 
 🤝 Contribution
+
   👩‍💻 Team Name: Team amogus 
   
   👨‍💻 Teammates' Names – Aastha Shrivastava, Shubham Sengar, Advay Singh, Kushagra Bahrgava
