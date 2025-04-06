@@ -4,31 +4,31 @@ An AI-integrated web application designed to help teachers manage student data e
 
 🚀 Features
 
-  📊 Input subject-wise grades, attendance, and behavioral notes
+    📊 Input subject-wise grades, attendance, and behavioral notes
 
-  🤖 AI-generated personalized feedback for each student
+    🤖 AI-generated personalized feedback for each student
 
-  📁 Import data via spreadsheets or manual entry
+    📁 Import data via spreadsheets or manual entry
 
-  📝 Review, edit, and export student reports
+    📝 Review, edit, and export student reports
 
-  🔒 Secure login for educators
+    🔒 Secure login for educators
 
-  📈 Performance tracking for academic and behavioral trends
+    📈 Performance tracking for academic and behavioral trends
 
 🎯 Problem Statement
 
-  Teachers spend a lot of time crafting individual feedback for students, often with limited insights across academic and behavioral aspects. This results in:
+    Teachers spend a lot of time crafting individual feedback for students, often with limited insights across academic and behavioral aspects. This results in:
 
-  Time-consuming and repetitive tasks
+    Time-consuming and repetitive tasks
 
-  Inconsistent or generic feedback
+    Inconsistent or generic feedback
 
-  Lack of personalized insights for student growth
+    Lack of personalized insights for student growth
 
 💡 Our Solution
 
-  Our app uses AI to analyze subject-wise marks, attendance records, and behavioral notes to generate meaningful, constructive feedback tailored to each student. It supports teachers by reducing manual effort and enhancing the quality of student evaluations.
+  Our app uses AI to analyze subject-wise marks, attendance records, and behavioral notes to generate meaningful, constructive feedback tailored to each student. It supports teachers by reducing manual effort and   enhancing the quality of student evaluations.
 
 🔍 Unique Selling Points (USP)
 
@@ -44,43 +44,43 @@ An AI-integrated web application designed to help teachers manage student data e
 
 🧰 Tech Stack
 
-  Frontend: React.js / Tailwind CSS / Next.js
+    Frontend: React.js / Tailwind CSS / Next.js
 
-  Backend: Node.js / tRPC / Prisma / NextAuth.js
+    Backend: Node.js / tRPC / Prisma / NextAuth.js
 
-  Database: MongoDB
+    Database: MongoDB
 
-  AI Integration: Gemini API
+    AI Integration: Gemini API
 
-  Authentication: JWT / Firebase Auth
+    Authentication: JWT / Firebase Auth
 
-  Deployment: Docker, Render / AWS / GCP
+    Deployment: Docker, Render / AWS / GCP
 
-  Storage: Firebase / AWS S3
+    Storage: Firebase / AWS S3
 
 📦 How It Works
 
-  Teachers input or upload student data
+    Teachers input or upload student data
 
-  AI analyzes the data using NLP and feedback models
+    AI analyzes the data using NLP and feedback models
 
-  The system generates personalized feedback for each student
+    The system generates personalized feedback for each student
 
-  Teachers review, edit, and export the final reports
+    Teachers review, edit, and export the final reports
 
 🔮 Future Scope
 
-  📚 LMS integration (Google Classroom, Moodle)
+    📚 LMS integration (Google Classroom, Moodle)
 
-  🌍 Multilingual feedback support
+    🌍 Multilingual feedback support
 
-  📊 Student goal-setting & progress tracking
+    📊 Student goal-setting & progress tracking
 
-  📱 Dedicated mobile app for real-time updates
+    📱 Dedicated mobile app for real-time updates
 
 🤝 Contribution
 
-  👩‍💻 Team Name: Team amogus 
+    👩‍💻 Team Name: Team amogus 
   
-  👨‍💻 Teammates' Names – Aastha Shrivastava, Shubham Sengar, Advay Singh, Kushagra Bahrgava
+    👨‍💻 Teammates' Names – Aastha Shrivastava, Shubham Sengar, Advay Singh, Kushagra Bahrgava
 
