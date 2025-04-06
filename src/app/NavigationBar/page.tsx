@@ -1,7 +1,9 @@
+"use client";
+
 import React from 'react';
 import { Home, UserPlus, List, Search } from 'lucide-react';
 
-export const NavigationBar: React.FC = () => {
+export default function NavigationBar() {
   const navItems = [
     {
       label: 'Add a new Student',
@@ -67,6 +69,4 @@ export const NavigationBar: React.FC = () => {
       </div>
     </nav>
   );
-};
-
-export default NavigationBar;
+}

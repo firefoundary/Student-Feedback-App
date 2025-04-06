@@ -34,7 +34,7 @@ export default function SearchStudent() {
       console.error("Feedback generation error:", error);
       setGeneratedFeedback(null);
     }
-  });
+  }) as any;
 
   const handleGenerateFeedback = () => {
     if (!studentId || !feedbackType) {
@@ -86,7 +86,7 @@ export default function SearchStudent() {
       toast.error("Failed to update student information");
       console.error("Update error:", error);
     }
-  });
+  }) as any;
 
   // Mutations for additional actions
   const addSubject = api.student.addSubject.useMutation({
@@ -201,7 +201,7 @@ export default function SearchStudent() {
 
       // Add/update subjects
       for (const subject of subjects) {
-        // Add or update subject
+      // Add or update subject
         const savedSubject = subject.id 
           ? subject 
           : await addSubject.mutateAsync({
@@ -209,6 +209,10 @@ export default function SearchStudent() {
               name: subject.name,
               performance: subject.performance
             });
+        // Ensure savedSubject has an ID before using it
+        if (!savedSubject.id) {
+          throw new Error('Saved subject does not have an ID');
+        }
 
         // Add grades for the subject
         for (const grade of subject.grades) {
@@ -366,8 +370,10 @@ export default function SearchStudent() {
                       value={subject.name}
                       onChange={(e) => {
                         const newSubjects = [...subjects];
-                        newSubjects[subjectIndex].name = e.target.value;
-                        setSubjects(newSubjects);
+                        if (newSubjects[subjectIndex]) {
+                          newSubjects[subjectIndex].name = e.target.value;
+                          setSubjects(newSubjects);
+                        }
                       }}
                       className="border p-2 w-full rounded"
                       required
@@ -379,8 +385,10 @@ export default function SearchStudent() {
                       value={subject.performance || ''}
                       onChange={(e) => {
                         const newSubjects = [...subjects];
-                        newSubjects[subjectIndex].performance = e.target.value;
-                        setSubjects(newSubjects);
+                        if (newSubjects[subjectIndex]) {
+                          newSubjects[subjectIndex].performance = e.target.value;
+                          setSubjects(newSubjects);
+                        }
                       }}
                       className="border p-2 w-full rounded"
                     >
@@ -401,8 +409,10 @@ export default function SearchStudent() {
                       type="button"
                       onClick={() => {
                         const newSubjects = [...subjects];
-                        newSubjects[subjectIndex].grades.push({ value: 0 });
-                        setSubjects(newSubjects);
+                        if (newSubjects[subjectIndex]) {
+                          newSubjects[subjectIndex].grades.push({ value: 0 });
+                          setSubjects(newSubjects);
+                        }
                       }}
                       className="bg-blue-500 text-white px-2 py-1 rounded text-sm"
                     >
@@ -418,8 +428,10 @@ export default function SearchStudent() {
                           value={grade.value}
                           onChange={(e) => {
                             const newSubjects = [...subjects];
-                            newSubjects[subjectIndex].grades[gradeIndex].value = parseFloat(e.target.value);
-                            setSubjects(newSubjects);
+                            if (newSubjects[subjectIndex]?.grades[gradeIndex]) {
+                              newSubjects[subjectIndex].grades[gradeIndex].value = parseFloat(e.target.value);
+                              setSubjects(newSubjects);
+                            }
                           }}
                           className="border p-2 w-full rounded"
                           placeholder="Enter grade"

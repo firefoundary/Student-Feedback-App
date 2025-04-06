@@ -80,7 +80,7 @@ export default function AddStudentPage() {
       // Create the student first
       const newStudent = await createStudentMutation.mutateAsync({
         ...formData,
-        grade: formData.grade || undefined // Make grade optional
+        grade: formData.grade ?? "Not Assigned"// Make grade optional
       });
 
       // Now that we have the student ID, we can add the additional data
@@ -288,8 +288,10 @@ export default function AddStudentPage() {
                       value={subject.name}
                       onChange={(e) => {
                         const newSubjects = [...subjects];
-                        newSubjects[subjectIndex].name = e.target.value;
-                        setSubjects(newSubjects);
+                        if(newSubjects[subjectIndex]){
+                          newSubjects[subjectIndex].name = e.target.value;
+                          setSubjects(newSubjects);
+                        }
                       }}
                       className="border p-2 w-full rounded"
                       required
@@ -298,11 +300,13 @@ export default function AddStudentPage() {
                   <div>
                     <label className="block mb-2">Performance</label>
                     <select
-                      value={subject.performance || ''}
+                      value={subject.performance ?? ''}
                       onChange={(e) => {
                         const newSubjects = [...subjects];
-                        newSubjects[subjectIndex].performance = e.target.value;
-                        setSubjects(newSubjects);
+                        if(newSubjects[subjectIndex]){
+                          newSubjects[subjectIndex].performance = e.target.value;
+                          setSubjects(newSubjects);
+                        }
                       }}
                       className="border p-2 w-full rounded"
                     >
@@ -323,8 +327,10 @@ export default function AddStudentPage() {
                       type="button"
                       onClick={() => {
                         const newSubjects = [...subjects];
-                        newSubjects[subjectIndex].grades.push({ value: 0 });
-                        setSubjects(newSubjects);
+                        if(newSubjects[subjectIndex]){
+                          newSubjects[subjectIndex].grades.push({ value: 0 });
+                          setSubjects(newSubjects);
+                        }
                       }}
                       className="bg-blue-500 text-white px-2 py-1 rounded text-sm"
                     >
@@ -340,8 +346,10 @@ export default function AddStudentPage() {
                           value={grade.value}
                           onChange={(e) => {
                             const newSubjects = [...subjects];
-                            newSubjects[subjectIndex].grades[gradeIndex].value = parseFloat(e.target.value);
-                            setSubjects(newSubjects);
+                            if(newSubjects[subjectIndex]?.grades[gradeIndex]){
+                              newSubjects[subjectIndex].grades[gradeIndex].value = parseFloat(e.target.value);
+                              setSubjects(newSubjects);
+                            }
                           }}
                           className="border p-2 w-full rounded"
                           placeholder="Enter grade"
@@ -351,8 +359,10 @@ export default function AddStudentPage() {
                           type="button"
                           onClick={() => {
                             const newSubjects = [...subjects];
-                            newSubjects[subjectIndex].grades.splice(gradeIndex, 1);
-                            setSubjects(newSubjects);
+                            if(newSubjects[subjectIndex]){
+                              newSubjects[subjectIndex].grades.splice(gradeIndex, 1);
+                              setSubjects(newSubjects);
+                            }
                           }}
                           className="bg-red-500 text-white px-2 py-1 rounded text-sm"
                         >
