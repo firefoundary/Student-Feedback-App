@@ -1,29 +1,76 @@
-# Create T3 App
+🧠 Student Management App with AI-Powered Insights
+An AI-integrated web application designed to help teachers manage student data efficiently and generate personalized feedback using academic performance, attendance, and behavioral insights.
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+🚀 Features
+  📊 Input subject-wise grades, attendance, and behavioral notes
 
-## What's next? How do I make an app with this?
+  🤖 AI-generated personalized feedback for each student
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+  📁 Import data via spreadsheets or manual entry
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+  📝 Review, edit, and export student reports
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+  🔒 Secure login for educators
 
-## Learn More
+  📈 Performance tracking for academic and behavioral trends
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+🎯 Problem Statement
+  Teachers spend a lot of time crafting individual feedback for students, often with limited insights across academic and behavioral aspects. This results in:
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+  Time-consuming and repetitive tasks
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+  Inconsistent or generic feedback
 
-## How do I deploy this?
+  Lack of personalized insights for student growth
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+💡 Our Solution
+  Our app uses AI to analyze subject-wise marks, attendance records, and behavioral notes to generate meaningful, constructive feedback tailored to each student. It supports teachers by reducing manual effort and enhancing the quality of student evaluations.
+
+🔍 Unique Selling Points (USP)
+  ✅ Combines academic, behavioral, and attendance data for holistic insights
+
+  🧠 Uses LLM (e.g., Gemini API) for context-aware feedback generation
+
+  ⏱ Saves time for teachers while maintaining personalization
+
+  🧾 Export-ready reports for parents and students
+
+  🧩 Easy to integrate with existing school systems
+
+🧰 Tech Stack
+  Frontend: React.js / Tailwind CSS / Next.js
+
+  Backend: Node.js / tRPC / Prisma / NextAuth.js
+
+  Database: MongoDB
+
+  AI Integration: Gemini API
+
+  Authentication: JWT / Firebase Auth
+
+  Deployment: Docker, Render / AWS / GCP
+
+  Storage: Firebase / AWS S3
+
+📦 How It Works
+  Teachers input or upload student data
+
+  AI analyzes the data using NLP and feedback models
+
+  The system generates personalized feedback for each student
+
+  Teachers review, edit, and export the final reports
+
+🔮 Future Scope
+  📚 LMS integration (Google Classroom, Moodle)
+
+  🌍 Multilingual feedback support
+
+  📊 Student goal-setting & progress tracking
+
+  📱 Dedicated mobile app for real-time updates
+
+🤝 Contribution
+  👩‍💻 Team Name: amogus  
+  👨‍💻 Teammates' Names – Aastha Shrivastava, Shubham Sengar, Advay Singh, Kushagra Bahrgava
+
