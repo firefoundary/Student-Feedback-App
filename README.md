@@ -82,5 +82,5 @@ An AI-integrated web application designed to help teachers manage student data e
 
     👩‍💻 Team Name: Team amogus 
   
-    👨‍💻 Teammates' Names – Aastha Shrivastava, Shubham Sengar, Advay Singh, Kushagra Bahrgava
+    👨‍💻 Teammates' Names – Aastha Shrivastava, Shubham Sengar, Advay Singh, Kushagra Bhargava
 
